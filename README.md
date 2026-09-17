@@ -2,7 +2,7 @@
 
 **[Explore the live dashboard](https://tay1203.github.io/DV2/)**
 
-An interactive web dashboard titled **“I'm Lovin McDonald's!”** that explores the company's history, worldwide restaurant distribution, revenue trends, and Malaysian menu nutrition. It combines visual storytelling with a meal explorer that lets visitors see how their food choices change the displayed nutrient totals.
+An interactive web dashboard that explores McDonald's history, worldwide restaurant distribution, revenue trends, and Malaysian menu nutrition. It combines visual storytelling with a meal explorer that lets visitors see how their food choices change the displayed nutrient totals.
 
 ## Screenshot
 
@@ -24,24 +24,6 @@ An interactive web dashboard titled **“I'm Lovin McDonald's!”** that explore
 - **Vega 5, Vega-Lite 5, Vega-Embed, and Vega Tooltip** for declarative charts, geographic layers, tooltips, and linked selections.
 - **Tailwind CSS 3** for layout and styling, with npm used for the CSS build workflow.
 - **CSV, JSON, and TopoJSON** for tabular data, menu hierarchies, and map geometry.
-- **GitHub Pages** for the live demo; no application backend is required.
-
-## Run locally
-
-Serve the repository over HTTP so JavaScript can fetch chart specifications:
-
-```bash
-python -m http.server 8000
-```
-
-Open `http://localhost:8000`. The compiled `output.css` is included. To edit and rebuild Tailwind styles, use a second terminal:
-
-```bash
-npm install
-npm run dev
-```
-
-`npm run dev` watches the CSS files; it does not start a web server. Internet access is needed for CDN libraries and remotely hosted datasets/images.
 
 ## What I learned
 
@@ -55,5 +37,4 @@ npm run dev
 ## Data and project notes
 
 The project was completed in October 2024. The map is labelled with 2024 data, and the revenue chart covers 2009–2023; these are project datasets, not a live data feed. Menu nutrition is attributed in the dashboard to McDonald's Malaysia. The nutrition indicators use the reference values encoded in the project.
-
-Start with `index.html` for the page, `w9.js` for interactions, and the JSON files for chart specifications. Despite its name, `treemap.json` defines a node-link menu tree. Several specifications load data from this repository and `tay1203/Homework-Week10` on GitHub. The original [design document](FDS.pdf) is also included.
+The original [design document](FDS.pdf) is also included.
